@@ -1,0 +1,259 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #FFD700;
+  --background-color: #000000;
+  --text-color: #F5F5F5;
+  --accent-color: #FFA500;
+  --font-family: 'Forum', serif;
+  --glow-color: rgba(255, 215, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.8;
+  background-image: radial-gradient(circle at 50% 0%, #111111 0%, #000000 100%);
+}
+
+.navbar {
+  background-color: #111;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'Playfair Display SC', serif;
+  color: #f5f5f5;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e0c060;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #222;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #f5f5f5;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #e0c060;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 130px 20px 60px 20px;
+  background-color: transparent;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  padding: 80px;
+  animation: fadeIn 1.5s ease-in-out;
+  background-image: url('../images/history0.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-intro h2 {
+  font-size: 2.8em;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px var(--accent-color);
+  transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.timeline-intro h2:hover {
+  transform: scale(1.1);
+  color: var(--accent-color);
+  letter-spacing: 2px;
+}
+
+.timeline-intro p {
+  font-size: 1.3em;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ddd;
+  line-height: 1.9;
+}
+
+.timeline {
+  position: relative;
+}
+
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  gap: 30px;
+  padding: 35px;
+  background: linear-gradient(160deg, #1c1c1c, #0f0f0f);
+  border-left: 5px solid var(--accent-color);
+  border-radius: 16px;
+  box-shadow: 0 6px 35px rgba(255, 165, 0, 0.25);
+  position: relative;
+  animation: slideIn 0.8s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(255, 165, 0, 0.35);
+}
+
+.event::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: 28px;
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+.date {
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 1.6em;
+  width: 100%;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.description {
+  flex: 1 1 60%;
+  font-size: 1.15em;
+  color: var(--text-color);
+  line-height: 2;
+  padding-right: 10px;
+}
+
+.event img {
+  flex: 1 1 35%;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 8px 30px rgba(255, 165, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.event img:hover {
+  transform: scale(1.035);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .description,
+  .event img {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .event::before {
+    left: -18px;
+    top: 20px;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  margin-top: 80px;
+  font-size: 1em;
+  border-top: 2px solid var(--accent-color);
+  box-shadow: 0 -2px 15px var(--glow-color);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

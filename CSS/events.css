@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Forum', serif;
+    background-color: #000;
+    color: gold;
+}
+
+.navbar {
+    background-color: #111;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: 'Playfair Display SC', serif;
+    color: #f5f5f5;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e0c060;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #222;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #f5f5f5;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color: #e0c060;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.events-background {
+    background-image: url('https://assets.onecompiler.app/4378cjwvz/43gd2yuux/pexels-axp-photography-500641970-18991559.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.events-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: gold;
+}
+
+.events-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: gold;
+}
+
+.event {
+    margin-bottom: 40px;
+}
+
+.event h3 {
+    font-size: 1.8em;
+    color: #f9d342;
+}
+
+footer {
+    background-color: #111;
+    color: gold;
+    text-align: center;
+    padding: 15px 0;
+}
