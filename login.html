@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Egyptian Museum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/validation.js" defer></script>
+    <link href="images/favicon.png" rel="icon">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <div class="logo">
+            <img src="images/favicon.png" alt="logo" class="logo-icon">
+        </div>
+        <div class="description">
+            <cite>Explore Egypt's History</cite>
+        </div>
+        <main>
+            <section class=" form-container">
+                <form name="userForm" onsubmit="return validateLogin(event)">
+
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="Email" type="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input name="password" placeholder="Password" type="password" required>
+
+                    <button type="submit">Log in</button>
+                    <p class="message">Don't have an account? <a href="register.html">Sign Up</a></p>
+                </form>
+                <div id="loginMessage" class="success-box"></div>
+                <div id="ErrorMessage" class="error-box"></div>
+            </section>
+        </main>
+        <img src="images/login-register image.jpg" alt="login-image" class="login-image">
+        <footer>
+            <p>&copy; 2025 Egyptian Museum.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

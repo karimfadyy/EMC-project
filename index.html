@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link href="images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>The Egyptian Museum</title>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.png" alt="The Egyptian Museum" />
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">About EMC</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">History</a>
+                        <a href="events.html">Events</a>
+                    </div>
+                </div>
+                <a href="tickets.html">Tickets</a>
+                <a href="about.html">About us</a>
+                <a href="login.html" id="login-link">Login</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- Title -->
+        <div class="fade-in-left">
+            <div class="title_home">
+                <img src="images/entrance_wide.jpg" alt="Egyptian Museum Entrance" />
+                <div class="title_text_overlay">
+                    <h2>Journey Through Time</h2>
+                    <h1>The Egyptian Museum in Cairo</h1>
+                    <p>Home to the world's most extensive collection of Pharaonic antiquities, where over 120,000
+                        artifacts tell the story of ancient Egypt's glorious past.</p>
+                </div>
+            </div>
+            <div class="intro_section">
+                <div class="intro_text">
+                    <h3>Welcome to the Egyptian Museum</h3>
+                    <h2>Where Ancient Egypt Comes Alive</h2>
+                    <p>Step into a world where <span class="intro-text-highlight">5,000 years of history</span> unfolds
+                        before your eyes. The Egyptian Museum in Cairo stands as a testament to one of the world's
+                        greatest civilizations, housing the most extensive collection of Pharaonic antiquities ever
+                        assembled.</p>
+                    <p>From the <span class="intro-text-highlight">legendary treasures of Tutankhamun</span> to the
+                        <span class="intro-text-highlight">majestic statues of Ramses II</span>, each artifact tells a
+                        story of innovation, artistry, and the eternal quest for immortality that defined ancient
+                        Egyptian culture.
+                    </p>
+                </div>
+                <div class="intro-image-section">
+                    <img src="images/statue.jpg" alt="statue holding cane">
+                </div>
+            </div>
+            <!-- Achievements -->
+            <div class="achievements-section">
+                <div class="overlay">
+                    <div class="achievement-boxes">
+                        <div class="box">
+                            <p>Over</p>
+                            <h2>120,000</h2>
+                            <p>Ancient<br>Artifacts</p>
+                        </div>
+                        <div class="box">
+                            <p>More than</p>
+                            <h2>3,000</h2>
+                            <p>Years of<br>History</p>
+                        </div>
+                        <div class="box">
+                            <p>Featuring</p>
+                            <h2>27</h2>
+                            <p>Royal<br>Mummies</p>
+                        </div>
+                        <div class="box">
+                            <p>Home to</p>
+                            <h2>5,000</h2>
+                            <p>Years of<br>Civilization</p>
+                        </div>
+                    </div>
+                    <h2 class="bottom-text">A Gateway to Ancient Egypt</h2>
+                </div>
+            </div>
+            <!-- History -->
+            <div class="history">
+                <h1>Our Legacy</h1>
+                <h2>A Century of Discovery</h2>
+                <div class="history-gallery">
+                    <div class="cornerstone">
+                        <img src="images/entrance-grand.jpg" alt="Egyptian Museum Entrance">
+                        <h2>The Grand Entrance of the Egyptian Museum</h2>
+                        <p class="desc">The Egyptian Museum is a must-visit destination for anyone interested in the
+                            rich
+                            history and culture of ancient Egypt.</p>
+                    </div>
+                    <div id="original-draw">
+                        <img src="images/tut3.png" alt="Tutankhamun Gallery">
+                        <h2>The Magnificent Tutankhamun Gallery</h2>
+                        <p class="desc">Home to the world's most famous archaeological discovery, the treasures of
+                            Tutankhamun continue to captivate visitors with their unparalleled beauty and historical
+                            significance.</p>
+                        <div class="history-button">
+                            <a href="history.html">
+                                <button>Explore Our History</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="marcel-dourgnon">
+                        <img src="images/royal-mummies.jpg" alt="Royal Mummies">
+                        <h2>The Royal Mummies Hall</h2>
+                        <p class="desc">Discover the secrets of the pharaohs with our collection of royal mummies,
+                            preserved for over 3,000 years to tell the story of ancient Egypt's rulers.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Avenue -->
+            <div class="avenue">
+                <div class="avenue-image">
+                    <img src="images/thumbnail.jpg" alt="Grand Egyptian Museum">
+                    <a href="https://www.youtube.com/watch?v=NKgge9VHiRI&ab_channel=SkyBuilds">
+                        <i class="fas fa-play-circle play-icon" id="play-icon" onclick="openVideo()"></i>
+                    </a>
+                </div>
+
+                <div class="avenue-text">
+                    <h1>The Future of Egyptology</h1>
+                    <p class="date">Grand Egyptian Museum</p>
+                    <p>Witness the dawn of a new era in Egyptology as we prepare to unveil the Grand Egyptian Museum,
+                        the world's largest archaeological museum dedicated to a single civilization.</p>
+                    <a href="https://www.youtube.com/watch?v=NKgge9VHiRI&ab_channel=SkyBuilds">Click here to Discover
+                        the Future</a>
+                </div>
+            </div>
+
+            <!-- Social media -->
+            <div class="social-media-bottom">
+                <p class="follow-text">Follow us</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/EgyptianMuseumCairo/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/egyptianmuseumincairo/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/egyptianmuseumc" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Egyptian Museum.</p>
+    </footer>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

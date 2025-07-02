@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <title>Register - Egyptian Museum</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link href="images/favicon.png" rel="icon">
+    <script src="js/validation.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/favicon.png" alt="logo" class="logo-icon">
+        </div>
+        <div class="description">
+            <cite>Explore Egypt's History</cite>
+        </div>
+        <main>
+            <section class="form-container">
+                <form id="registerForm" onsubmit="return validateRegister(event)">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required />
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+                    <button type="submit">Register</button>
+                    <p class="message">Already have an account? <a href="login.html">Login</a></p>
+                </form>
+                <div id="loginMessage" class="success-box"></div>
+                <div id="ErrorMessage" class="error-box"></div>
+            </section>
+
+        </main>
+        <img src="images/login-register image.jpg" alt="login-image" class="login-image">
+        <footer>
+            <p id="footer">&copy; 2025 Egyptian Museum</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link href="css/tickets.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link id="theme-style" rel="stylesheet" href="css/theme-light.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link href="images/favicon.png" rel="icon">
+    <title>Tickets & Hours - Egyptian Museum</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.png" alt="The Egyptian Museum" />
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">About EMC</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">History</a>
+                        <a href="events.html">Events</a>
+                    </div>
+                </div>
+                <a href="tickets.html">Tickets</a>
+                <a href="about.html">About us</a>
+                <a href="login.html" id="login-link">Login</a>
+                <a href="#" id="logout-link" style="display:none;">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tickets-hero">
+        <img src="images/entrance.jpg" alt="Egyptian Museum Exterior">
+        <div class="hero-text-overlay">
+            <h1>Tickets & Opening Hours</h1>
+        </div>
+    </section>
+    <!-- opening hours -->
+    <section class="ticket-section">
+        <div class="ticket-info">
+            <h2><i class="fas fa-clock"></i> Opening Hours</h2>
+            <img src="images/entrance-loin.jpg" id="lion">
+            <p><strong>Daily:</strong> 9:00 AM - 5:00 PM every day</p>
+        </div>
+        <!-- tickets prices -->
+        <div class="ticket-info">
+            <h2> <i class="fas fa-ticket-alt" style="font-size:36px"></i> Ticket Prices</h2>
+            <p class="note-box"><strong>Free entrance for childern under 6 years</strong></p>
+            <img src="images/hallway-inside.webp">
+            <h3>Entrance fee for Egyptian and Arab Citizens:</h3>
+            <p><strong>Adult: </strong> 30 EGP</p>
+            <p><strong>Student:</strong> 10 EGP</p>
+            <h3>Entrance fee for other nationalities:</h3>
+            <p><strong>Adult: </strong> 550 EGP</p>
+            <p><strong>Student:</strong> 275 EGP</p>
+        </div>
+        <!-- photo ticket -->
+        <div class="ticket-info">
+            <h2><i class="fas fa-camera"></i> Photo Ticket</h2>
+            <p><strong>Mobile Photography is free of charge.</strong></p>
+        </div>
+        <!-- video ticket -->
+        <div class="ticket-info">
+            <h2><i class="fas fa-video"></i> Video Ticket </h2>
+            <p><strong>Video: </strong> EGP 300 (personal use)</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Egyptian Museum.</p>
+    </footer>
+    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
